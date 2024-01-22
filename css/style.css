@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+}
+
+html {
+
+    font-family: 'montserrat', 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*----------------section delivery--------------------*/
+
+
+.delivery {
+    background: #212121;
+    color: white;
+}
+
+.delivery .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.delivery__h2 {
+
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    margin-top: 80px;
+    margin-bottom: 23px;
+}
+
+.delivery__h2 span {
+    font-weight: 400;
+}
+
+.delivery__text {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 300;
+    margin-bottom: 69px;
+
+
+}
+
+/*-----------------------section man-woman--------------------------------*/
+
+.man-woman .container {
+    display: flex;
+    flex-direction: row;
+}
+
+.man,
+.woman {
+    width: 50%;
+    padding: 60px 15px 58px;
+
+}
+
+.man-woman__h2 {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.72px;
+}
+
+.man-woman__text {
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.man-woman__a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    flex-shrink: 0;
+    background: #D7B399;
+
+}
+
+.man-woman__a:hover {
+    background: #bea201;
+}
+
+.man-woman {
+    background: rgb(249, 246, 241);
+    background: linear-gradient(90deg, rgba(249, 246, 241, 1) 0%, rgba(249, 246, 241, 1) 50%, rgba(249, 224, 224, 1) 50%, rgba(249, 224, 224, 1) 100%);
+}
+
+.man {
+    background: url(../img/man.png) no-repeat;
+    background-size: 80%;
+    background-position-x: right;
+    background-position-y: 100px;
+}
+
+.woman {
+    background: url(../img/woman.png) no-repeat;
+    background-size: 75%;
+    background-position-x: right;
+    background-position-y: 100px;
+}
+
+@media(max-width:800px) {
+    .man-woman .container {
+        flex-direction: column;
+    }
+
+    .man,
+    .woman {
+        width: 100%;
+
+    }
+
+    .man-woman {
+        background: rgb(249, 246, 241);
+        background: linear-gradient(180deg, rgba(249, 246, 241, 1) 0%, rgba(249, 246, 241, 1) 50%, rgba(249, 224, 224, 1) 50%, rgba(249, 224, 224, 1) 100%);
+
+    }
+
+}
+
+/*----------------------------section new------------------*/
+.new .container {
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+}
+
+
+.new__h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+
+}
+
+.new__btn {
+    width: 220px;
+    height: 55px;
+    flex-shrink: 0;
+    background: #D7B399;
+    border: none;
+    color: #FFF;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    display: block;
+}
+
+.catalog {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 103px;
+    margin-bottom: 103px;
+}
+
+.card {
+    border: 1px solid #D7B399;
+    padding: 25px;
+    width: 20%;
+    margin: 10px;
+    text-align: center;
+}
+
+.card__img {
+    width: 80%;
+}
+
+.card__title {
+
+    text-align: center;
+
+    font-size: 14px;
+
+    font-weight: 600;
+    margin-top: 25px;
+
+}
+
+.card__price {
+    color: #D7B399;
+
+    text-align: center;
+
+    font-size: 18px;
+
+    font-weight: 700;
+    margin-top: 15px;
+
+}
+
+@media(max-width: 700px) {
+    .card {
+        width: 40%;
+    }
+}
+
+@media(max-width: 400px) {
+    .card {
+        width: 80%;
+    }
+}
+
+/*----------------------------section wrapper------------------*/
+
+.section__wrapper {
+    display: flex;
+    flex-direction: row;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.mainmenu__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.mainmenu__item{
+    padding: 61px;
+    width: 95px;
+    height: 17px;
+    
+
+}
